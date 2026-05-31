@@ -30,9 +30,11 @@ OpenAI `gpt-image-2` で一括生成するスキル群です。
 
 ## サンプル
 
-スキルを実際に実行して生成したサンプルを [`samples/ai-occupied-humans`](./samples/ai-occupied-humans/) に収録しています（テーマ「AIに占領された地球人類」/ 透過 PNG 8 枚 + メイン + タブ + 申請用 metadata）。
+スキルを実際に実行して生成したサンプルを [`samples/`](./samples/) に **スキル毎のフォルダ** で収録しています（`samples/<スキル名>/<サンプル名>/`）。
 
-![サンプルプレビュー](./samples/ai-occupied-humans/preview.png)
+- **line-stamp-generator** → [`samples/line-stamp-generator/ai-occupied-humans`](./samples/line-stamp-generator/ai-occupied-humans/)（テーマ「AIに占領された地球人類」/ 透過 PNG 8 枚 + メイン + タブ + 申請用 metadata）
+
+![サンプルプレビュー](./samples/line-stamp-generator/ai-occupied-humans/preview.png)
 
 ## 使い方
 
