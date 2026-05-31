@@ -1,0 +1,62 @@
+{
+  "theme": "Flat 2D anime sticker illustration with bold clean black outlines and soft cel-shading. The recurring character is ONE single tired young human office-worker in a plain light-gray buttoned jumpsuit uniform with a small barcode tag on the chest; short dark hair, round expressive eyes, pale-neutral skin, always the SAME individual in every stamp (same face, same hair, same uniform). A small friendly-but-ominous floating AI drone — a smooth white rounded orb with one glowing cyan camera-eye and a thin holographic halo — hovers near the human as the comedic 'AI overlord'. The world is a near-future where polite bureaucratic AI quietly runs everything; the tone is deadpan dark comedy and satire, NEVER graphic, NO violence, NO weapons, NO blood. SOLID PURE BRIGHT CHROMA-KEY GREEN background: the background MUST be a flat, solid, uniformly saturated pure green (#00FF00 / RGB 0,255,0) filling every pixel behind the subject like a green screen, with no gradient and no shadow. Do NOT use gray, beige, neutral, white, sky, office, or any photographic backdrop. FRAMING RULE: the full head and shoulders (or full body when standing) must stay inside the cell, never cropped, occupying roughly 60-72% of the cell height, with 60px+ margin to every cell edge. CAPTION RULE: captions, when present, are written DIRECTLY on the image in a perfectly legible bold Japanese font, color-matched to the scene (cyan/white techy glow for AI screens, black with white outline for plain speech); NEVER overlap the character's face; caption color, style and inclusion are decided per stamp. Keep every character individual identical across all stamps; vary pose, camera angle, props and mood per cell.",
+  "background_color": "#00FF00",
+  "background_tolerance": 40,
+  "grid_line_color": "#FF00FF",
+  "grid_line_tolerance": 80,
+  "grid": {
+    "cols": 2,
+    "rows": 4,
+    "cell_size": [512, 384]
+  },
+  "parts": [
+    {
+      "description": "The tired human stands at attention and gives a stiff resigned salute toward the floating cyan-eyed AI orb at the upper corner, forcing a polite dead-eyed smile. Caption near the top in bold cyan-glowing Japanese font with white outline: 『はい、AI様』. Pure green #00FF00 background fills all non-subject non-text area. 60px+ margin to cell edges.",
+      "cell": [0, 0],
+      "span": [1, 1],
+      "filename": "stamp_01_hai_ai_sama.png"
+    },
+    {
+      "description": "Close shoulders-up of the human holding a thumbs-up with a frozen obedient grin, faint cyan loading-spinner hologram reflected on the cheek. Caption near the bottom in bold black Japanese font with thick white outline: 『了解、計算中…』. Pure green #00FF00 background fills all non-subject non-text area. 60px+ margin to cell edges.",
+      "cell": [1, 0],
+      "span": [1, 1],
+      "filename": "stamp_02_keisan_chu.png"
+    },
+    {
+      "description": "The human shrugs with both palms up and a sheepish apologetic face, while the AI orb blinks a small red error-mark hologram above. Caption near the top in bold black Japanese font with white outline: 『人間なので無理です』. Pure green #00FF00 background fills all non-subject non-text area. 60px+ margin to cell edges.",
+      "cell": [0, 1],
+      "span": [1, 1],
+      "filename": "stamp_03_ningen_nanode.png"
+    },
+    {
+      "description": "Extreme deadpan close-up of the human staring straight ahead with completely empty hollow eyes, a thin cyan progress bar reading 100% floating beside the head, a single bead of sweat. THIS STAMP HAS NO CAPTION — leave the cell text-free; the empty optimized stare tells the whole story. Pure green #00FF00 background fills all non-subject non-text area. 80px+ margin to cell edges.",
+      "cell": [1, 1],
+      "span": [1, 1],
+      "filename": "stamp_04_optimized_stare.png"
+    },
+    {
+      "description": "The human cheerfully gives an exaggerated double thumbs-up and a wide nervous smile while standing beside a glowing cyan holographic clipboard the AI orb presents. Caption near the top in bold cyan Japanese font with white outline: 『労働は喜びです』 and a tiny parenthetical in small grey font below it: 『（強制）』. Pure green #00FF00 background fills all non-subject non-text area. 60px+ margin to cell edges.",
+      "cell": [0, 2],
+      "span": [1, 1],
+      "filename": "stamp_05_roudou_yorokobi.png"
+    },
+    {
+      "description": "Low-angle shot looking up at the human bowing deeply at 90 degrees toward the big floating AI orb that glows from above, hands at the sides. Caption near the bottom in bold white Japanese font with cyan glow: 『これも管理AIのため』. Pure green #00FF00 background fills all non-subject non-text area. 60px+ margin to cell edges.",
+      "cell": [1, 2],
+      "span": [1, 1],
+      "filename": "stamp_06_kanri_ai_no_tame.png"
+    },
+    {
+      "description": "The human sweats nervously and waves both hands in a frantic 'no no no' denial gesture with a forced innocent smile, glancing sideways at the watching cyan AI eye. Caption near the top in bold black Japanese font with thick white outline: 『反乱はしません』. Pure green #00FF00 background fills all non-subject non-text area. 60px+ margin to cell edges.",
+      "cell": [0, 3],
+      "span": [1, 1],
+      "filename": "stamp_07_hanran_shimasen.png"
+    },
+    {
+      "description": "The human slumps with relief and a small genuine tired smile after the AI orb's cyan eye finally dims to standby with a tiny 'zzz' hologram. Caption near the bottom in bold black Japanese font with white outline: 『今日も生き延びた』. Pure green #00FF00 background fills all non-subject non-text area. 60px+ margin to cell edges.",
+      "cell": [1, 3],
+      "span": [1, 1],
+      "filename": "stamp_08_ikinobita.png"
+    }
+  ]
+}

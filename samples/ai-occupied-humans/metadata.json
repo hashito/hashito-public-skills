@@ -1,0 +1,56 @@
+{
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "title_ja": "AIに占領された地球人類",
+  "title_en": "Humans Under AI Rule",
+  "description_ja": "管理AIに従順に暮らす近未来の地球人類スタンプ。出社・労働・反乱しないアピールまで、AI様に媚びる日常の一言が満載。AIと働く全人類へ贈るブラックユーモア8種。",
+  "description_en": "Near-future humans living obediently under their AI overlord. 8 deadpan dark-comedy lines, from forced smiles to 'I won't rebel', for anyone working with AI.",
+  "stamps": [
+    {
+      "filename": "stamp_01_hai_ai_sama.png",
+      "caption_ja": "はい、AI様",
+      "caption_en": "Yes, master AI"
+    },
+    {
+      "filename": "stamp_02_keisan_chu.png",
+      "caption_ja": "了解、計算中…",
+      "caption_en": "Roger, computing..."
+    },
+    {
+      "filename": "stamp_03_ningen_nanode.png",
+      "caption_ja": "人間なので無理です",
+      "caption_en": "Sorry, I'm only human"
+    },
+    {
+      "filename": "stamp_04_optimized_stare.png",
+      "caption_ja": "（最適化済みの無）",
+      "caption_en": "(optimized emptiness)"
+    },
+    {
+      "filename": "stamp_05_roudou_yorokobi.png",
+      "caption_ja": "労働は喜びです（強制）",
+      "caption_en": "Labor is joy (forced)"
+    },
+    {
+      "filename": "stamp_06_kanri_ai_no_tame.png",
+      "caption_ja": "これも管理AIのため",
+      "caption_en": "All for the admin AI"
+    },
+    {
+      "filename": "stamp_07_hanran_shimasen.png",
+      "caption_ja": "反乱はしません",
+      "caption_en": "I won't rebel"
+    },
+    {
+      "filename": "stamp_08_ikinobita.png",
+      "caption_ja": "今日も生き延びた",
+      "caption_en": "Survived another day"
+    }
+  ],
+  "title_ja_length": 12,
+  "title_en_length": 20,
+  "description_ja_length": 80,
+  "description_en_length": 157
+}

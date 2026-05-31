@@ -17,6 +17,10 @@ output/
 *.apng
 *.gif
 
+# ただしリポジトリ同梱のサンプル成果物は追跡する
+!samples/**/*.png
+!samples/**
+
 # OS / エディタ
 .DS_Store
 Thumbs.db

@@ -28,6 +28,12 @@ OpenAI `gpt-image-2` で一括生成するスキル群です。
 - トークタブ: 96×74（center-crop）
 - 申請テキスト: タイトル＋説明文（各 160 字以内 / 日英）
 
+## サンプル
+
+スキルを実際に実行して生成したサンプルを [`samples/ai-occupied-humans`](./samples/ai-occupied-humans/) に収録しています（テーマ「AIに占領された地球人類」/ 透過 PNG 8 枚 + メイン + タブ + 申請用 metadata）。
+
+![サンプルプレビュー](./samples/ai-occupied-humans/preview.png)
+
 ## 使い方
 
 ### プラグインとして追加
