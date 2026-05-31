@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# 環境変数・シークレット（APIキー等を絶対にコミットしない）
+.env
+.env.*
+*.key
+secrets.json
+
+# 生成物（スタンプ画像・中間ファイル）
+output/
+*.png
+*.apng
+*.gif
+
+# OS / エディタ
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,111 @@
+{
+  "$schema_version": "1.0.0",
+  "$description": "line-stamp-generator のオプションマクロ集。grid / alpha_clean / tab / bg_color / caption_style / theme_template の名前付きセットを定義する。各 SKILL.md / 各 scripts/*.py からは presets.<category>.<name> の形式で参照する。stamp_spec.json に `preset: { grid: '8_stamps', alpha_clean: 'default', tab: 'center_crop' }` のように指定すると、対応するキーが自動展開される前提（実装は scripts/*.py の --preset <name> オプションで解決）。",
+
+  "grid": {
+    "$comment": "枚数別キャンバス・セルサイズ。LINE 比率近似（横長 ≒ 370:320）。",
+    "4_stamps":  { "cols": 2, "rows": 2, "cell_size": [512, 512] },
+    "6_stamps":  { "cols": 2, "rows": 3, "cell_size": [512, 512] },
+    "8_stamps":  { "cols": 2, "rows": 4, "cell_size": [512, 384] },
+    "12_stamps": { "cols": 3, "rows": 4, "cell_size": [341, 384] }
+  },
+
+  "alpha_clean": {
+    "$comment": "scripts/clean_alpha.py のチューニングセット。default で 9 割の被写体が綺麗に抜ける。",
+    "default": {
+      "tolerance": 50.0,
+      "erode": 2,
+      "despill": true,
+      "defringe": true,
+      "feather": 1.0,
+      "grid_line_tolerance": 80.0
+    },
+    "strong": {
+      "$comment": "縁に背景色が残りやすい被写体（毛・羽・髪・透明物）向け。被写体本体も若干細る",
+      "tolerance": 60.0,
+      "erode": 3,
+      "despill": true,
+      "defringe": true,
+      "feather": 1.5,
+      "grid_line_tolerance": 100.0
+    },
+    "gentle": {
+      "$comment": "輪郭がシャープな被写体（線画・3D レンダ）向け。エッジを残したい時。",
+      "tolerance": 35.0,
+      "erode": 1,
+      "despill": true,
+      "defringe": true,
+      "feather": 0.5,
+      "grid_line_tolerance": 60.0
+    },
+    "no_despill": {
+      "$comment": "灰色背景（全 RGB ≥ 128）で despill すると全 RGB が 0 になる既知バグの回避用。",
+      "tolerance": 50.0,
+      "erode": 2,
+      "despill": false,
+      "defringe": true,
+      "feather": 1.0,
+      "grid_line_tolerance": 80.0
+    }
+  },
+
+  "tab": {
+    "$comment": "scripts/resize_for_line.py の tab.png 生成モード。",
+    "center_crop": { "mode": "center-crop", "zoom": 1.0 },
+    "center_crop_zoom_1_2": { "mode": "center-crop", "zoom": 1.2 },
+    "contain":     { "mode": "contain" }
+  },
+
+  "bg_color": {
+    "$comment": "クロマキー背景色プリセット。被写体に登場しない色を選ぶ。",
+    "default":            "#00FF00",
+    "for_green_subject":  "#FF00FF",
+    "for_magenta_subject":"#00FFFF",
+    "for_chroma_safe":    "#FF8000"
+  },
+
+  "grid_line_color": {
+    "default":            "#FF00FF",
+    "for_magenta_subject":"#00FF00",
+    "for_green_subject":  "#FFFF00"
+  },
+
+  "caption_style": {
+    "$comment": "stamp の caption（セル内テキスト）の色・フォント指示テンプレ。description に直接埋め込む短文。世界観に合わせて選ぶ。",
+    "default_black":  "セル上部に太い黒の手書き風日本語フォントで白フチ付きの caption",
+    "menpou_red":     "朱墨色 (#B33024) で書道風の太い筆文字、白フチ付きの caption",
+    "neon_cyan":      "ネオン管風シアン (#00FFFF) 発光、外側に薄いグローを伴う caption",
+    "gold_serif":     "金色 (#D4AF37) のセリフ体、暗色フチで高級感を出した caption",
+    "comic_pop":      "セル下部に黒太のコミックポップ体 + 黄色フチで吹き出しっぽい caption",
+    "none":           "THIS STAMP HAS NO CAPTION — leave the cell text-free. 表情だけで意味を伝える"
+  },
+
+  "theme_template": {
+    "$comment": "真顔シュール系の実証済み theme テンプレ。新規スタンプセットの叩き台として 02_stamp_spec_design に貼り込む。",
+    "deadpan_surreal_shiba": "薄茶の柴犬の単独写真。写真風、無表情・真顔・半目。柔らかい自然光、純粋なクロマキー緑背景（gray/beige/neutral 禁止）。各セルは 60px+ の余白。",
+    "uncanny_human_chick":   "黄色いひよこに人間の唇と人間の目が乗ったクリーチャーの単独写真。写真風、完全に真顔。柔らかい屋内照明、純粋なクロマキー緑背景。各セルは 60px+ の余白。",
+    "brooding_salaryman":    "暗い色のスーツを着た中年男性の単独肖像。写真風、虚無の表情。低彩度、暗めの環境光、純粋なクロマキー緑背景。各セルは 80px+ の余白。"
+  },
+
+  "framing_rule": {
+    "$comment": "prompt_recipes.md §2 の FRAMING RULE 短文。description の末尾に貼り込む共通指示。",
+    "default": "FRAMING RULE: full head visible, ears to chin uncropped, subject occupies 70% of the cell, 60px+ margin to cell border.",
+    "wide_margin": "FRAMING RULE: full head visible, ears to chin uncropped, subject occupies 60% of the cell, 80px+ margin to cell border.",
+    "tight": "FRAMING RULE: subject fills 85% of the cell, micro-expression-readable, 40px+ margin to cell border."
+  },
+
+  "$usage_examples": {
+    "stamp_spec.json": {
+      "preset": {
+        "grid": "8_stamps",
+        "alpha_clean": "default",
+        "tab": "center_crop",
+        "bg_color": "default",
+        "grid_line_color": "default",
+        "framing_rule": "default"
+      }
+    },
+    "scripts/clean_alpha.py CLI": ".venv/bin/python plugins/line-stamp-generator/scripts/clean_alpha.py --in-dir stamps_raw --out-dir stamps_alpha --bg-color $(jq -r .bg_color.default presets.json) --preset default",
+    "scripts/resize_for_line.py CLI": ".venv/bin/python plugins/line-stamp-generator/scripts/resize_for_line.py --in-dir stamps_alpha --out-dir output --tab-preset center_crop"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "line-stamp-generator",
+  "version": "1.6.0",
+  "description": "LINE スタンプ用の透過 PNG 一式と申請用テキスト（日英）を OpenAI gpt-image-2 で一括生成するスキル群。指定枚数（既定 8 枚）を 1 枚のグリッド画像として効率生成し、グリッド線検出 → クロマキー透過（グリッド線色フリンジ同時除去）→ LINE 規格サイズ（370×320 / メイン 240×240 / トークタブ 96×74 center-crop）へリサイズ、さらに日本語と英語の両方でタイトル＋説明文（各 160 字以内、`validate_metadata.py` で自動検証）の metadata.md / metadata.json まで生成する。背景色強制・構図・OpenAI セーフティ対策・「ありえない要素」の描かせ方・**セル毎のシーン差分（量産時の同一化対策）**・**caption の色とフォントを世界観に合わせて part 毎に個別指定 / 不要なら省略**・**Claude が独自処理（色推定リカバリ・独断リトライ・独自解釈）を行わない最上位ルール**など、これまでの試行錯誤を凝縮した `references/prompt_recipes.md` を内蔵。design-parts-generator と同じ生成・透過パイプラインを LINE スタンプ向けに最適化した 8 Skill 構成（00_line_stamp_runner で全体実行）。",
+  "author": { "name": "hashito" },
+  "license": "MIT"
+}

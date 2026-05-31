@@ -1,0 +1,11 @@
+{
+  "name": "hashito-public-skills",
+  "owner": { "name": "hashito" },
+  "plugins": [
+    {
+      "name": "line-stamp-generator",
+      "source": "./plugins/line-stamp-generator",
+      "description": "LINE クリエイターズスタンプと申請用テキスト（日英 2 言語）を一括生成するスキル群。指定枚数（既定 8 枚）を 1 枚のグリッド画像として gpt-image-2 で効率生成 → グリッド線検出 → クロマキー透過 → LINE 規格（最大 370×320 / メイン 240×240 / トークタブ 96×74 center-crop）リサイズ → 日本語＋英語のタイトル＋説明文（各 160 字以内）の metadata.md/json 生成までを 8 Skill 構成で自動化。00_line_stamp_runner で全体実行を司る。"
+    }
+  ]
+}

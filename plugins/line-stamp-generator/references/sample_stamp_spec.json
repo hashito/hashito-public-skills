@@ -1,0 +1,32 @@
+{
+  "theme": "写真風（photorealistic）の柴犬のポートレート。ただし目と唇は人間っぽく加工されており、シュールで真顔。背景は SOLID PURE BRIGHT CHROMA-KEY GREEN (#00FF00) で均一に塗りつぶす。グレー・ベージュ・スタジオ等の代替背景は禁止。文字スタイルは part 毎に色とフォントを上書き可。caption が無いセルもあり得る。全 part を通じてキャラの個体は完全に同一（同じ毛色・同じ顔・同じ人間っぽい目と唇）。各 part でポーズ・カメラアングル・小道具などのシーン差分を入れる。",
+  "background_color": "#00FF00",
+  "background_tolerance": 40,
+  "grid_line_color": "#FF00FF",
+  "grid_line_tolerance": 80,
+  "grid": {
+    "cols": 2,
+    "rows": 4,
+    "cell_size": [512, 384]
+  },
+  "parts": [
+    {
+      "description": "正面アップ、少しだけ首をかしげる、完全な真顔。柔らかい朝の自然光。セル上部に太い黒の手書き風日本語フォントで白フチ付きの caption『とりあえず…』を載せる。セル境界に 60px+ の余白。",
+      "cell": [0, 0],
+      "span": [1, 1],
+      "filename": "stamp_01_toriaezu.png"
+    },
+    {
+      "description": "斜め下から見上げるローアングル、犬が誰かを見下ろしているような構図。完全な真顔。やや硬い昼光。セル上部に太いゴシック体の黒文字 + 白フチで『そういうとこやぞ』。セル境界に 60px+ の余白。",
+      "cell": [1, 0],
+      "span": [1, 1],
+      "filename": "stamp_02_souiutoko.png"
+    },
+    {
+      "description": "犬が真正面を見つめ、目だけ完全に死んでいる（半目で焦点が合っていない）クローズアップ。全周がほのかに暗くなり、被写体だけがスポットライトで照らされる。THIS STAMP HAS NO CAPTION — leave the cell text-free. 表情だけで意味を伝える。セル境界に 80px+ の広めの余白。",
+      "cell": [0, 1],
+      "span": [1, 1],
+      "filename": "stamp_03_silent_stare.png"
+    }
+  ]
+}
